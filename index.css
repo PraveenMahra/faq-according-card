@@ -13,11 +13,14 @@ html {
 
 body {
   font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(to bottom, #a968ea, #6663e8);
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #8365e7;
+  min-height: 100vh;
 }
 
 .card {
@@ -27,6 +30,7 @@ body {
   padding: 4rem 4rem 4rem 0;
   border-radius: 1.5rem;
   background-color: #ffffff;
+  height: 50rem;
   overflow: hidden;
 }
 
@@ -49,6 +53,8 @@ body {
 .faq-item {
   list-style: none;
   border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 2rem;
+  width: 35rem;
 }
 
 .question {
@@ -57,20 +63,66 @@ body {
   align-items: center;
   font-size: 1.5rem;
   color: #46474b;
+  cursor: pointer;
 }
 
 .question-active {
-  font-size: 2rem;
+  font-weight: 700;
   color: #161523;
 }
 
 .answer {
-  width: 35rem;
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
   font-size: 1.2rem;
   color: #7a797e;
 }
 
+.icon-rotate {
+  transform: rotate(180deg);
+}
+
 .hidden {
   display: none;
+}
+
+@media (max-width: 55rem) {
+  main {
+    padding: 10rem;
+  }
+
+  .card {
+    flex-direction: column;
+    padding: 0 2rem 0rem 2rem;
+    height: 52rem;
+    overflow: visible;
+  }
+
+  .card-img {
+    display: flex;
+    justify-content: center;
+    margin-top: -7rem;
+    margin-left: 0%;
+  }
+
+  .card-img picture img {
+    width: 15rem;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .faq-item {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .card {
+    height: auto;
+  }
+
+  .faq-item {
+    width: auto;
+  }
 }

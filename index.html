@@ -17,86 +17,101 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div class="card">
-      <div class="card-img">
-        <img src="./images/illustration-woman-online-desktop.svg" alt="" />
-      </div>
+    <main>
+      <div class="card">
+        <div class="card-img">
+          <picture>
+            <source
+              media="(min-width:55rem)"
+              srcset="./images/illustration-woman-online-desktop.svg"
+            />
+            <source
+              media="(max-width:55rem)"
+              srcset="./images/illustration-woman-online-mobile.svg"
+            />
 
-      <div class="card-text-content">
-        <h2 class="heading">FAQ</h2>
-        <ul class="faq-container">
-          <li class="faq-item">
-            <div class="question">
-              How many team members can I invite?
-              <img
-                class="question-icon"
-                src="./images/icon-arrow-down.svg"
-                alt=""
-              />
-            </div>
-            <div class="answer">
-              You can invite up to 2 additional users on the Free plan. There is
-              no limit on team members for the Premium plan.
-            </div>
-          </li>
-          <li class="faq-item">
-            <div class="question">
-              What is the maximum file upload size?
-              <img
-                class="question-icon"
-                src="./images/icon-arrow-down.svg"
-                alt=""
-              />
-            </div>
-            <div class="answer">
-              No more than 2GB. All files in your account must fit your allotted
-              storage space.
-            </div>
-          </li>
-          <li class="faq-item">
-            <div class="question">
-              How do I reset my password?
-              <img
-                class="question-icon"
-                src="./images/icon-arrow-down.svg"
-                alt=""
-              />
-            </div>
-            <div class="answer">
-              Click “Forgot password” from the login page or “Change password”
-              from your profile page. A reset link will be emailed to you.
-            </div>
-          </li>
-          <li class="faq-item">
-            <div class="question">
-              Can I cancel my subscription?
-              <img
-                class="question-icon"
-                src="./images/icon-arrow-down.svg"
-                alt=""
-              />
-            </div>
-            <div class="answer">
-              Yes! Send us a message and we’ll process your request no questions
-              asked.
-            </div>
-          </li>
-          <li class="faq-item">
-            <div class="question">
-              Do you provide additional support?
-              <img
-                class="question-icon"
-                src="./images/icon-arrow-down.svg"
-                alt=""
-              />
-            </div>
-            <div class="answer">
-              Chat and email support is available 24/7. Phone lines are open
-              during normal business hours.
-            </div>
-          </li>
-        </ul>
+            <img src="./images/illustration-woman-online-desktop.svg" alt="" />
+          </picture>
+        </div>
+
+        <div class="card-text-content">
+          <h2 class="heading">FAQ</h2>
+          <ul class="faq-container">
+            <li class="faq-item">
+              <div class="question">
+                How many team members can I invite?
+                <img
+                  class="question-icon"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <div class="answer hidden">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="question">
+                What is the maximum file upload size?
+                <img
+                  class="question-icon"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <div class="answer hidden">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="question">
+                How do I reset my password?
+                <img
+                  class="question-icon"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <div class="answer hidden">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="question">
+                Can I cancel my subscription?
+                <img
+                  class="question-icon"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <div class="answer hidden">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </div>
+            </li>
+            <li class="faq-item">
+              <div class="question">
+                Do you provide additional support?
+                <img
+                  class="question-icon"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <div class="answer hidden">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
